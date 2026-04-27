@@ -12,4 +12,4 @@
 
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=programersha_frontend-project-44&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=programersha_frontend-project-44)
 
-Пример установки пакета brain-even, запуска игры, победа и поражение игрока - https://asciinema.org/a/UAaHX7acdDKxJ6dR.
+Демонстрация работы проекта: https://asciinema.org/a/QiGbyNXnSCixPFzw.
