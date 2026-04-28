@@ -12,4 +12,7 @@
 
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=programersha_frontend-project-44&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=programersha_frontend-project-44)
 
-Демонстрация работы проекта: https://asciinema.org/a/QiGbyNXnSCixPFzw.
+Демонстрация работы проекта:
+1. Игра "Проверка на чётность" (brain-even) - https://asciinema.org/a/cccSCjSNj9DYI8Ou
+2. Игра "Калькулятор" (brain-calc) - https://asciinema.org/a/b65Tk8JFD9imN0tB
+3. Игра "НОД" (brain-gcd) - https://asciinema.org/a/hHo8TgK5t2bTX181
