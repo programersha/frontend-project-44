@@ -1,7 +1,7 @@
 import greeting from './cli.js'
 import readlineSync from 'readline-sync'
 
-const gameBase = (gameRules, getQandA) => {
+export const gameBase = (gameRules, getQandA) => {
   const name = greeting()
   console.log(gameRules)
   let correctAnswers = 0
@@ -29,4 +29,6 @@ const gameBase = (gameRules, getQandA) => {
   return
 }
 
-export default gameBase
+export const generateNumber = () => {
+  return Math.floor(Math.random() * 100) + 1
+}

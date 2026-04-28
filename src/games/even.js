@@ -1,4 +1,4 @@
-import gameBase from '../index.js'
+import { gameBase, generateNumber } from '../index.js'
 
 const evenGame = () => {
   const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".'
@@ -6,7 +6,7 @@ const evenGame = () => {
 }
 
 const getQandA = () => {
-  const num = Math.floor(Math.random() * 100) + 1
+  const num = generateNumber()
 
   return {
     question: num,

@@ -1,4 +1,4 @@
-import gameBase from '../index.js'
+import { gameBase, generateNumber } from '../index.js'
 
 const calcGame = () => {
   const gameRules = 'What is the result of the expression?'
@@ -33,9 +33,6 @@ const getQandA = () => {
   }
 }
 
-const generateNumber = () => {
-  return Math.floor(Math.random() * 100) + 1
-}
 const generateOperator = () => {
   const operators = ['+', '-', '*']
   const operator = operators[Math.floor(Math.random() * operators.length)]
