@@ -16,5 +16,5 @@
 1. Игра "Проверка на чётность" (brain-even) - https://asciinema.org/a/cccSCjSNj9DYI8Ou
 2. Игра "Калькулятор" (brain-calc) - https://asciinema.org/a/b65Tk8JFD9imN0tB
 3. Игра "НОД" (brain-gcd) - https://asciinema.org/a/hHo8TgK5t2bTX181
-4. Игра "Арифметическая прогрессия" - https://asciinema.org/a/pprCebCIuZr30G1t
-5. Игра "Простое ли число?" - https://asciinema.org/a/Z2W8cN29RtDBk5Yg
+4. Игра "Арифметическая прогрессия" (brain-progression) - https://asciinema.org/a/pprCebCIuZr30G1t
+5. Игра "Простое ли число?" (brain-prime) - https://asciinema.org/a/Z2W8cN29RtDBk5Yg
