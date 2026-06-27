@@ -24,7 +24,7 @@ export const gameBase = (gameRules, getQandA) => {
     console.log(`Congratulations, ${name}!`)
   }
   else {
-    console.log(`Let's try  try again, ${name}!`)
+    console.log(`Let's try again, ${name}!`)
   }
   return
 }
