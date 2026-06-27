@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/programersha/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/programersha/frontend-project-44/actions)",
+  "description": "Brain Games — консольное приложение с набором математических игр",
   "homepage": "https://github.com/programersha/frontend-project-44#readme",
   "bugs": {
     "url": "https://github.com/programersha/frontend-project-44/issues"
@@ -13,7 +13,6 @@
   "license": "ISC",
   "author": "Julia Khrapina",
   "type": "module",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
