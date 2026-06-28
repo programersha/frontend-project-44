@@ -14,15 +14,15 @@ const getQandA = () => {
 
   switch (operator) {
     case '+':
-      question += `'${firstNum} + ${secondNum}'`
+      question += `${firstNum} + ${secondNum}`
       answer += firstNum + secondNum
       break
     case '-':
-      question += `'${firstNum} - ${secondNum}'`
+      question += `${firstNum} - ${secondNum}`
       answer += firstNum - secondNum
       break
     case '*':
-      question += `'${firstNum} * ${secondNum}'`
+      question += `${firstNum} * ${secondNum}`
       answer += firstNum * secondNum
       break
   }
