@@ -1,4 +1,4 @@
-import { gameBase, generateNumber } from '../index.js'
+import { gameBase, getRandomIntInclusive } from '../index.js'
 
 const calcGame = () => {
   const gameRules = 'What is the result of the expression?'
@@ -6,8 +6,8 @@ const calcGame = () => {
 }
 
 const getQandA = () => {
-  const firstNum = generateNumber()
-  const secondNum = generateNumber()
+  const firstNum = getRandomIntInclusive(0, 100)
+  const secondNum = getRandomIntInclusive(0, 100)
   const operator = generateOperator()
   let question = ''
   let answer = 0
@@ -35,7 +35,7 @@ const getQandA = () => {
 
 const generateOperator = () => {
   const operators = ['+', '-', '*']
-  const operator = operators[Math.floor(Math.random() * operators.length)]
+  const operator = operators[getRandomIntInclusive(0, operators.length - 1)]
   return operator
 }
 

@@ -1,4 +1,4 @@
-import { gameBase, generateNumber } from '../index.js'
+import { gameBase, getRandomIntInclusive } from '../index.js'
 
 const gcdGame = () => {
   const gameRules = 'Find the greatest common divisor of given numbers.'
@@ -6,8 +6,8 @@ const gcdGame = () => {
 }
 
 const getQandA = () => {
-  const firstNum = generateNumber()
-  const secondNum = generateNumber()
+  const firstNum = getRandomIntInclusive(0, 100)
+  const secondNum = getRandomIntInclusive(0, 100)
   const answer = gcd(firstNum, secondNum)
 
   return {

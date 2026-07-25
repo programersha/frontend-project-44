@@ -1,4 +1,4 @@
-import { gameBase, generateNumber } from '../index.js'
+import { gameBase, getRandomIntInclusive } from '../index.js'
 
 const progressionGame = () => {
   const gameRules = 'What number is missing in the progression?'
@@ -8,8 +8,8 @@ const progressionGame = () => {
 const getQandA = () => {
   const progLength = generateProgLength()
   const emptyElementIndex = generateEmptyElementIndex(progLength)
-  const start = generateNumber()
-  const step = generateNumber()
+  const start = getRandomIntInclusive(0, 100)
+  const step = getRandomIntInclusive(0, 100)
   const progression = generateProgression(start, step, progLength)
   const answer = progression[emptyElementIndex]
   progression[emptyElementIndex] = '..'
@@ -20,10 +20,10 @@ const getQandA = () => {
   }
 }
 
-const generateProgLength = () => Math.floor(Math.random() * 6) + 5
+const generateProgLength = () => getRandomIntInclusive(5, 10)
 
 const generateEmptyElementIndex = (progLength) => {
-  return Math.floor(Math.random() * progLength)
+  return getRandomIntInclusive(0, progLength)
 }
 
 const generateProgression = (start, step, length) => {

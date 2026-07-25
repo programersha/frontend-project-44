@@ -1,4 +1,4 @@
-import { gameBase, generateNumber } from '../index.js'
+import { gameBase, getRandomIntInclusive } from '../index.js'
 
 const evenGame = () => {
   const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".'
@@ -6,7 +6,7 @@ const evenGame = () => {
 }
 
 const getQandA = () => {
-  const num = generateNumber()
+  const num = getRandomIntInclusive(0, 100)
 
   return {
     question: num,

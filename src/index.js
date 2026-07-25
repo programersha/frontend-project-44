@@ -5,8 +5,7 @@ export const gameBase = (gameRules, getQandA) => {
   const name = greeting()
   console.log(gameRules)
   let correctAnswers = 0
-  let answerIsTrue = true
-  while (correctAnswers < 3 && answerIsTrue === true) {
+  while (correctAnswers < 3) {
     const { question, answer } = getQandA()
     console.log(`Question: ${question}`)
     const userAnswer = readlineSync.question('Your answer: ')
@@ -15,20 +14,17 @@ export const gameBase = (gameRules, getQandA) => {
       correctAnswers += 1
     }
     else {
-      answerIsTrue = false
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`)
+      console.log(`Let's try again, ${name}!`)
+      return
     }
   }
 
-  if (answerIsTrue) {
-    console.log(`Congratulations, ${name}!`)
-  }
-  else {
-    console.log(`Let's try again, ${name}!`)
-  }
+  console.log(`Congratulations, ${name}!`)
+  
   return
 }
 
-export const generateNumber = () => {
-  return Math.floor(Math.random() * 100) + 1
+export const getRandomIntInclusive = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1) + min)
 }

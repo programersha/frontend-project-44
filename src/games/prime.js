@@ -1,4 +1,4 @@
-import { gameBase, generateNumber } from '../index.js'
+import { gameBase, getRandomIntInclusive } from '../index.js'
 
 const primeGame = () => {
   const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -6,7 +6,7 @@ const primeGame = () => {
 }
 
 const getQandA = () => {
-  const num = generateNumber()
+  const num = getRandomIntInclusive(0, 100)
 
   return {
     question: num,
