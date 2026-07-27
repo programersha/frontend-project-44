@@ -34,6 +34,8 @@ const calc = (firstNum, secondNum, operator) => {
       question: `${firstNum} * ${secondNum}`,
       answer: firstNum * secondNum
       }
+    default:
+      throw new Error (`Unknown operator: '${operator}'!`)
   }
 }
 
