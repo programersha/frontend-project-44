@@ -10,15 +10,13 @@ export const gameBase = (gameRules, getQandA) => {
     const { question, answer } = getQandA()
     console.log(`Question: ${question}`)
     const userAnswer = readlineSync.question('Your answer: ')
-    if (userAnswer === answer) {
-      console.log('Correct!')
-      correctAnswers += 1
-    }
-    else {
+    if (userAnswer !== answer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`)
       console.log(`Let's try again, ${name}!`)
       return
     }
+    console.log('Correct!')
+    correctAnswers += 1
   }
 
   console.log(`Congratulations, ${name}!`)
