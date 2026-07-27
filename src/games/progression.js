@@ -6,7 +6,7 @@ const progressionGame = () => {
 }
 
 const getQandA = () => {
-  const progLength = generateProgLength()
+  const progLength = getRandomIntInclusive(5, 10)
   const start = getRandomIntInclusive(0, 100)
   const step = getRandomIntInclusive(1, 100)
 
@@ -15,7 +15,7 @@ const getQandA = () => {
 
 const progression = (progLength, start, step) => {
   const progression = generateProgression(start, step, progLength)
-  const emptyElementIndex = generateEmptyElementIndex(progLength)
+  const emptyElementIndex = getRandomIntInclusive(0, progLength - 1)
   const answer = progression[emptyElementIndex]
   progression[emptyElementIndex] = '..'
   const question = progression.join(' ')
@@ -25,12 +25,6 @@ const progression = (progLength, start, step) => {
     answer: answer,
   }
 
-}
-
-const generateProgLength = () => getRandomIntInclusive(5, 10)
-
-const generateEmptyElementIndex = (progLength) => {
-  return getRandomIntInclusive(0, progLength - 1)
 }
 
 const generateProgression = (start, step, length) => {
