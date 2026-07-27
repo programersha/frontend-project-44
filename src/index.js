@@ -4,8 +4,9 @@ import readlineSync from 'readline-sync'
 export const gameBase = (gameRules, getQandA) => {
   const name = greeting()
   console.log(gameRules)
+  const roundsCount = 3
   let correctAnswers = 0
-  while (correctAnswers < 3) {
+  while (correctAnswers < roundsCount) {
     const { question, answer } = getQandA()
     console.log(`Question: ${question}`)
     const userAnswer = readlineSync.question('Your answer: ')
